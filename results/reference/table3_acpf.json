@@ -1,0 +1,573 @@
+{
+  "source": "Paper Table III (final weights, kNN 15, density 1.7; N-1 over 200 sampled outages, seed 0)",
+  "results": {
+    "GT": {
+      "n_buses": 2000,
+      "n_lines": 2359,
+      "n_trafos": 1215,
+      "converged": true,
+      "relax_rounds": 0,
+      "time_s": 5.907110929489136,
+      "v_min": 0.8248448921992355,
+      "v_max": 1.0400000000000005,
+      "v_in_band_pct": 97.35000000000001,
+      "v_in_strict_pct": 95.7,
+      "p_load_mw": 67109.20999999999,
+      "p_gen_mw": 68043.09481237727,
+      "p_loss_mw": 933.8848123772768,
+      "p_loss_pct": 1.372490206320539,
+      "line_loss_mw": 819.8669052057371,
+      "trafo_loss_mw": 114.01792917821783,
+      "max_line_loading_pct": 286.06990219647093,
+      "mean_line_loading_pct": 32.13221718837274,
+      "pct_lines_overloaded": 1.8651971174226365,
+      "n_lines_overloaded": 44,
+      "max_trafo_loading_pct": 147.10692714587677,
+      "q_violations": 0,
+      "q_max_mvar": 2325.7145105600357,
+      "q_total_mvar": 75827.33926343918,
+      "per_tier": {
+        "115kV": {
+          "n": 826,
+          "v_min": 0.8248448921992355,
+          "v_max": 1.0400000000000005,
+          "v_in_band_pct": 93.82566585956417,
+          "v_in_strict_pct": 89.95157384987893,
+          "p_loss_mw": 247.38522904945145
+        },
+        "161kV": {
+          "n": 453,
+          "v_min": 0.9771262198218573,
+          "v_max": 1.0375400596443913,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 74.59077485645386
+        },
+        "230kV": {
+          "n": 152,
+          "v_min": 0.8326229038430232,
+          "v_max": 1.04,
+          "v_in_band_pct": 98.68421052631578,
+          "v_in_strict_pct": 98.02631578947368,
+          "p_loss_mw": 169.9623292463903
+        },
+        "500kV": {
+          "n": 120,
+          "v_min": 0.9887870316984224,
+          "v_max": 1.0400000000000003,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 327.9285720534415
+        }
+      },
+      "top_overloaded": [
+        {
+          "line_idx": 864,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 286.06990219647093,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 863,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 258.27897280811413,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 2217,
+          "from_kv": 500.0,
+          "to_kv": 500.0,
+          "loading_pct": 238.43594204046244,
+          "length_km": 26.485005048957326
+        },
+        {
+          "line_idx": 891,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 215.28654608160332,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1835,
+          "from_kv": 500.0,
+          "to_kv": 500.0,
+          "loading_pct": 188.80928771500356,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 2050,
+          "from_kv": 230.0,
+          "to_kv": 230.0,
+          "loading_pct": 168.45577139267402,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1003,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 166.34094495869337,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1258,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 160.2460156982532,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1259,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 160.2460156982532,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 890,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 157.9174617878432,
+          "length_km": 1.0
+        }
+      ],
+      "n1": {
+        "n_lines_tested": 200,
+        "n_converged": 200,
+        "convergence_rate_pct": 100.0,
+        "n_failures": 0,
+        "baseline_v_violations": 53,
+        "mean_v_violations_per_n1": 53.39,
+        "mean_new_v_violations_per_n1": 0.405,
+        "time_s": 1183.3546452522278
+      }
+    },
+    "GED": {
+      "n_buses": 2000,
+      "n_lines": 2117,
+      "n_trafos": 847,
+      "converged": true,
+      "relax_rounds": 0,
+      "time_s": 5.121798515319824,
+      "v_min": 0.8816337797140885,
+      "v_max": 1.0400000000000005,
+      "v_in_band_pct": 97.15,
+      "v_in_strict_pct": 92.4,
+      "p_load_mw": 67109.20999999999,
+      "p_gen_mw": 68211.57552721356,
+      "p_loss_mw": 1102.3655272135657,
+      "p_loss_pct": 1.6160974419565606,
+      "line_loss_mw": 970.2508458085629,
+      "trafo_loss_mw": 132.13754077746347,
+      "max_line_loading_pct": 1605.304886834801,
+      "mean_line_loading_pct": 51.28857992775721,
+      "pct_lines_overloaded": 9.966934341048654,
+      "n_lines_overloaded": 211,
+      "max_trafo_loading_pct": 261.52860929076485,
+      "q_violations": 0,
+      "q_max_mvar": 10030.882896065712,
+      "q_total_mvar": 87957.27804267406,
+      "per_tier": {
+        "115kV": {
+          "n": 826,
+          "v_min": 0.8816337797140885,
+          "v_max": 1.0400000000000005,
+          "v_in_band_pct": 93.7046004842615,
+          "v_in_strict_pct": 83.05084745762711,
+          "p_loss_mw": 457.76983457943487
+        },
+        "161kV": {
+          "n": 453,
+          "v_min": 0.9477354638609592,
+          "v_max": 1.020063629572219,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 98.89624724061811,
+          "p_loss_mw": 281.9597717273664
+        },
+        "230kV": {
+          "n": 152,
+          "v_min": 0.929051210148494,
+          "v_max": 1.04,
+          "v_in_band_pct": 98.68421052631578,
+          "v_in_strict_pct": 98.68421052631578,
+          "p_loss_mw": 106.3439462648796
+        },
+        "500kV": {
+          "n": 120,
+          "v_min": 0.9875268587472669,
+          "v_max": 1.0400000000000005,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 124.17729323688192
+        }
+      },
+      "top_overloaded": [
+        {
+          "line_idx": 1143,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1605.304886834801,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1428,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1464.6276726837766,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1430,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1463.7777657287356,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 879,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1011.0343526102298,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 349,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 983.0217146793605,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1426,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 978.1288328148335,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1137,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 966.5243117889001,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1425,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 486.74795581557396,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1427,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 485.79232369360864,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 541,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 485.5088441751497,
+          "length_km": 1.0
+        }
+      ],
+      "n1": {
+        "n_lines_tested": 200,
+        "n_converged": 200,
+        "convergence_rate_pct": 100.0,
+        "n_failures": 0,
+        "baseline_v_violations": 57,
+        "mean_v_violations_per_n1": 57.185,
+        "mean_new_v_violations_per_n1": 0.33,
+        "time_s": 1035.0997598171234
+      }
+    },
+    "GED-rxb": {
+      "n_buses": 2000,
+      "n_lines": 2117,
+      "n_trafos": 847,
+      "converged": true,
+      "relax_rounds": 0,
+      "time_s": 5.111119747161865,
+      "v_min": 0.8636616625470603,
+      "v_max": 1.0400000000000005,
+      "v_in_band_pct": 96.5,
+      "v_in_strict_pct": 90.75,
+      "p_load_mw": 67109.20999999999,
+      "p_gen_mw": 68392.08639912674,
+      "p_loss_mw": 1282.8763991267479,
+      "p_loss_pct": 1.8757673097440821,
+      "line_loss_mw": 1148.607385792254,
+      "trafo_loss_mw": 134.32184653833843,
+      "max_line_loading_pct": 1841.7443506916823,
+      "mean_line_loading_pct": 50.19112373440945,
+      "pct_lines_overloaded": 10.392064241851678,
+      "n_lines_overloaded": 220,
+      "max_trafo_loading_pct": 337.9108935349286,
+      "q_violations": 0,
+      "q_max_mvar": 12601.9461581707,
+      "q_total_mvar": 93238.7048997879,
+      "per_tier": {
+        "115kV": {
+          "n": 826,
+          "v_min": 0.8636616625470603,
+          "v_max": 1.0400000000000003,
+          "v_in_band_pct": 91.88861985472155,
+          "v_in_strict_pct": 78.57142857142857,
+          "p_loss_mw": 522.0028634840077
+        },
+        "161kV": {
+          "n": 453,
+          "v_min": 0.9552906195974417,
+          "v_max": 1.024805142504608,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 317.03628272522053
+        },
+        "230kV": {
+          "n": 152,
+          "v_min": 0.8998220241419518,
+          "v_max": 1.0400000000000005,
+          "v_in_band_pct": 98.68421052631578,
+          "v_in_strict_pct": 97.36842105263158,
+          "p_loss_mw": 131.77330214723952
+        },
+        "500kV": {
+          "n": 120,
+          "v_min": 0.9839997234373411,
+          "v_max": 1.0400000000000003,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 177.79493743578638
+        }
+      },
+      "top_overloaded": [
+        {
+          "line_idx": 1428,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1841.7443506916823,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1430,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1840.8211447397498,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1143,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1655.570584667575,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 349,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1231.278789332936,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1426,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1228.8140809433,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 879,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 982.4218417773869,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1137,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 951.819309691963,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1425,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 613.0941772184475,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1427,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 612.1003448581663,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 348,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 610.837614207807,
+          "length_km": 1.0
+        }
+      ],
+      "n1": {
+        "n_lines_tested": 200,
+        "n_converged": 199,
+        "convergence_rate_pct": 99.5,
+        "n_failures": 1,
+        "baseline_v_violations": 70,
+        "mean_v_violations_per_n1": 70.59798994974874,
+        "mean_new_v_violations_per_n1": 0.6482412060301508,
+        "time_s": 1026.5314359664917
+      }
+    },
+    "Schultz": {
+      "n_buses": 2000,
+      "n_lines": 1784,
+      "n_trafos": 847,
+      "converged": true,
+      "relax_rounds": 0,
+      "time_s": 4.769516229629517,
+      "v_min": 0.8830884388064686,
+      "v_max": 1.0400000000000007,
+      "v_in_band_pct": 95.3,
+      "v_in_strict_pct": 88.3,
+      "p_load_mw": 67109.20999999999,
+      "p_gen_mw": 68340.63640738411,
+      "p_loss_mw": 1231.4264073841186,
+      "p_loss_pct": 1.8018948492716476,
+      "line_loss_mw": 1094.4584979497495,
+      "trafo_loss_mw": 137.0145086064032,
+      "max_line_loading_pct": 1598.6727543194258,
+      "mean_line_loading_pct": 57.7840624575495,
+      "pct_lines_overloaded": 14.125560538116591,
+      "n_lines_overloaded": 252,
+      "max_trafo_loading_pct": 199.8278431695309,
+      "q_violations": 0,
+      "q_max_mvar": 2158.182193160057,
+      "q_total_mvar": 74377.28803634644,
+      "per_tier": {
+        "115kV": {
+          "n": 826,
+          "v_min": 0.8830884388064686,
+          "v_max": 1.0399999999999998,
+          "v_in_band_pct": 94.18886198547214,
+          "v_in_strict_pct": 78.4503631961259,
+          "p_loss_mw": 429.02393532420234
+        },
+        "161kV": {
+          "n": 453,
+          "v_min": 0.8883073635578738,
+          "v_max": 1.031654806002377,
+          "v_in_band_pct": 90.50772626931567,
+          "v_in_strict_pct": 89.40397350993378,
+          "p_loss_mw": 402.056168433733
+        },
+        "230kV": {
+          "n": 152,
+          "v_min": 0.9312986508415699,
+          "v_max": 1.04,
+          "v_in_band_pct": 99.3421052631579,
+          "v_in_strict_pct": 98.02631578947368,
+          "p_loss_mw": 120.38375526150485
+        },
+        "500kV": {
+          "n": 120,
+          "v_min": 0.9862685826349198,
+          "v_max": 1.0400000000000003,
+          "v_in_band_pct": 100.0,
+          "v_in_strict_pct": 100.0,
+          "p_loss_mw": 142.99463893030924
+        }
+      },
+      "top_overloaded": [
+        {
+          "line_idx": 1126,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1598.6727543194258,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 374,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 1052.593836054626,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1120,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 961.2262976997528,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1137,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 941.9694453546333,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 637,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 656.6722252484212,
+          "length_km": 7.456930888347654
+        },
+        {
+          "line_idx": 835,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 577.4777678569967,
+          "length_km": 22.80505401196009
+        },
+        {
+          "line_idx": 658,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 549.7886404207557,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 603,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 487.0106195666597,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 1744,
+          "from_kv": 161.0,
+          "to_kv": 161.0,
+          "loading_pct": 475.9438158560932,
+          "length_km": 1.0
+        },
+        {
+          "line_idx": 925,
+          "from_kv": 115.0,
+          "to_kv": 115.0,
+          "loading_pct": 424.8029292812074,
+          "length_km": 1.0
+        }
+      ],
+      "n1": {
+        "n_lines_tested": 200,
+        "n_converged": 197,
+        "convergence_rate_pct": 98.5,
+        "n_failures": 3,
+        "baseline_v_violations": 94,
+        "mean_v_violations_per_n1": 96.3502538071066,
+        "mean_new_v_violations_per_n1": 2.4568527918781724,
+        "time_s": 965.2261729240417
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "Paper Sec. IV-G ablation (stage-1 weights, 16 test patches)",
+  "results": {
+    "Ours (full)": {
+      "degree_w1": 1.2986007777876214,
+      "avg_clustering_diff": 0.3103814442849268,
+      "mean_path_diff": 0.8464955296463774,
+      "diameter_diff": 2.4375,
+      "spectral_gap_diff": 0.026710482150637635,
+      "edge_length_w1": 0.06323136253616171,
+      "n_components_mean": 1.0,
+      "n_disconnected_patches": 0
+    },
+    "Ours w/o MST proj.": {
+      "degree_w1": 1.4638099210946425,
+      "avg_clustering_diff": 0.3238010258949672,
+      "mean_path_diff": 1.2908719623104217,
+      "diameter_diff": 2.875,
+      "spectral_gap_diff": 0.10361277026860502,
+      "edge_length_w1": 0.06545351431805813,
+      "n_components_mean": 11.4375,
+      "n_disconnected_patches": 14
+    }
+  }
+}

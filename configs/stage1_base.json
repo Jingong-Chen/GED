@@ -1,0 +1,27 @@
+{
+  "recorded_args": {
+    "out": "runs/stage1_base",
+    "epochs": 300,
+    "batch_size": 2,
+    "max_n": 1536,
+    "n_pairs": 384,
+    "hidden": 192,
+    "n_layers": 4,
+    "n_heads": 6,
+    "lr": 0.00015,
+    "weight_decay": 0.001,
+    "early_stop_patience": 40,
+    "lambda_attr": 0.5,
+    "lambda_fied": 0.2,
+    "fied_eps": 0.04,
+    "class_w": [
+      1.0,
+      3.0,
+      5.0,
+      6.0
+    ],
+    "n_geo_channels": 28
+  },
+  "selected_epoch": 49,
+  "best_val": 1.0559397228113085
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ged"
+version = "1.0.0"
+description = "GED: Geographic Edge Diffusion for Synthetic Transmission Grids"
+readme = "README.md"
+license = { text = "CC-BY-NC-4.0" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Jingong Chen" },
+  { name = "Kwanghee Won" },
+  { name = "Timothy M. Hansen" },
+]
+dependencies = [
+  "torch>=2.1",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "networkx>=3.0",
+  "pandas>=2.0",
+  "pandapower>=2.13",
+  "matpowercaseframes>=2.0",
+  "matplotlib>=3.7",
+  "tqdm>=4.60",
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.setuptools]
+packages = ["ged"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E402", "E501", "E701", "E702", "E731", "E741"]

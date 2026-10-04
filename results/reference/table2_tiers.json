@@ -1,0 +1,30 @@
+{
+  "source": "Paper Table II (final weights, kNN 15); the GED column counted 96 degenerate self-loop pairs",
+  "rows": {
+    "115 kV": {
+      "GT": 1169,
+      "GT_cap_C": 718,
+      "GED": 1008
+    },
+    "161 kV": {
+      "GT": 630,
+      "GT_cap_C": 432,
+      "GED": 569
+    },
+    "230 kV": {
+      "GT": 186,
+      "GT_cap_C": 81,
+      "GED": 45
+    },
+    "500 kV": {
+      "GT": 142,
+      "GT_cap_C": 35,
+      "GED": 40
+    },
+    "Total": {
+      "GT": 2127,
+      "GT_cap_C": 1266,
+      "GED": 1662
+    }
+  }
+}

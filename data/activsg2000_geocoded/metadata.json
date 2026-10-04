@@ -1,0 +1,33 @@
+{
+  "source_file": "case_ACTIVSg2000.m",
+  "region": "texas",
+  "bus_count": 2000,
+  "branch_count": 3206,
+  "gen_count": 544,
+  "geocode_match_rate": 0.9605,
+  "unresolved_count": 79,
+  "states_covered": [
+    "AK",
+    "AL",
+    "AR",
+    "CA",
+    "CO",
+    "DC",
+    "IA",
+    "IL",
+    "KS",
+    "MI",
+    "NC",
+    "ND",
+    "NE",
+    "NM",
+    "NY",
+    "SD",
+    "TN",
+    "TX",
+    "VA",
+    "WA",
+    "WV"
+  ],
+  "schema_version": 1
+}

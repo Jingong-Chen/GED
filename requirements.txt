@@ -1,0 +1,11 @@
+# Versions used to produce the paper's numbers (Python 3.13, CUDA 12.8, RTX 5090).
+# Install the torch build that matches your CUDA from https://pytorch.org first if needed.
+torch==2.11.0
+numpy==2.4.4
+scipy==1.16.3
+networkx==3.6.1
+pandas==2.3.3
+pandapower==3.4.0
+matpowercaseframes==2.1.0
+matplotlib==3.9.2
+tqdm==4.67.3

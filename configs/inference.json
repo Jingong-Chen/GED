@@ -1,0 +1,31 @@
+{
+  "final": {
+    "weights": "weights/ged_texas.pt",
+    "knn": 15,
+    "edge_density": 1.7,
+    "n_samples": 5,
+    "n_steps": 30,
+    "max_n": 1500,
+    "use_mst": true,
+    "used_for": ["Table II", "Table III", "Fig. 3"]
+  },
+  "table1": {
+    "weights": "weights/ged_texas_stage1.pt",
+    "knn": 18,
+    "edge_density": 1.7,
+    "n_samples": 5,
+    "n_steps": 30,
+    "max_n": 1500,
+    "use_mst": true,
+    "used_for": ["Table I GED row"]
+  },
+  "ablation_patches": {
+    "weights": "weights/ged_texas_stage1.pt",
+    "knn": 12,
+    "edge_density": 1.5,
+    "n_samples": 5,
+    "n_steps": 30,
+    "pad_n": 256,
+    "used_for": ["Sec. IV-G"]
+  }
+}
